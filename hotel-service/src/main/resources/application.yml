@@ -6,16 +6,17 @@ spring:
   application:
     name: hotel-service
   datasource:
-    username: root
-    password: srivatsan
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
   jpa:
     hibernate:
       ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
 
     
 eureka:
