@@ -18,8 +18,7 @@ public class HotelServiceApplication {
 		SpringApplication.run(HotelServiceApplication.class, args);
 	}
 
-	
-	@Bean
+
 	public CommandLineRunner runner() {
 		
 		
