@@ -1,13 +1,7 @@
 server:
   port: 6063
 
-info:
-  app:
-    name:@Hotel Service@
-    version:@1.0@
-  java:
-    version:@java.version@
-
+# Application Name will be used as service-Id when registred with eureka  
 spring:
   application:
     name: hotel-service
