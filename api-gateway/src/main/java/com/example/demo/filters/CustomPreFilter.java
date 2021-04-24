@@ -23,13 +23,13 @@ public class CustomPreFilter extends AbstractGatewayFilterFactory<CustomPreFilte
 	public GatewayFilter apply(Config config) {
 
 		
-
+		
 		 return (exchange, chain) -> {
 	            ServerHttpRequest request = exchange.getRequest();
 
 	 //  URI requestUri = exchange.get
 
-
+	   
 	            System.out.println("PRE FILTER =:"+request);
 	         // System.out.println("PRE Filter =:"+ requestUrl);
 	            

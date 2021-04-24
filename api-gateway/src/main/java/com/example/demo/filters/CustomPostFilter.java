@@ -26,13 +26,13 @@ public CustomPostFilter() {
 public GatewayFilter apply(Config config) {
 
 	return (exchange,chain) ->{
-
+		
 		return chain.filter(exchange).then(Mono.fromRunnable(()->{
-
+			
 			 ServerHttpResponse resp = exchange.getResponse();
-
+			 
 			  System.out.println("Response Status Code:=" +resp.getStatusCode());
-
+			  
 			System.out.println("Inside Post Filter");
 		}));
 	};
